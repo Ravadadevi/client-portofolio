@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+       
+        list-style: none;
+        text-decoration: none;
+
+      }
+        /* Apply background animation */
+        body {
+            background: #2c3e50;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: backgroundAnim 10s ease-in-out infinite;
+        }
+
+        @keyframes backgroundAnim {
+          0% {
+            background-color: rgb(121, 121, 177);
+          }
+          50% {
+            background-color: rgb(118, 118, 190);
+          }
+          100% {
+            background-color: rgb(121, 121, 170);
+          }
+      }
+
+
+        /* Image styling */
+        img {
+            margin-left: 2%;
+            margin-top: -5%;
+            opacity: 0;
+            transform: scale(1.2);
+            animation: fadeInScale 2s ease-out forwards;
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(1.2);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Heading styling */
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: -38%;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeInMove 1.5s ease-out 0.5s forwards;
+        }
+
+        @keyframes fadeInMove {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Paragraph styling */
+        p {
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 25px;
+            margin-top: 5px;
+            margin-left: 5%;
+            opacity: 0;
+            font-size: 15px;
+            transform: translateY(30px);
+            animation: fadeInMove 2s ease-out 1s forwards;
+        }
+
+        /* Animation for the paragraph */
+        @keyframes fadeInMove {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* From Uiverse.io by satyamchaudharydev */ 
+button {
+  width: 150px;
+  height: 56px;
+  overflow: hidden;
+  border: none;
+  color:rgb(92, 61, 150);
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  left: 40%;
+  font-weight: 600;
+}
+
+button > div,
+button > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-left: -7%;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+button:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+button .clone > *,
+button .text > * {
+  opacity: 1;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  margin-left: 4px;
+}
+
+button .clone > * {
+  transform: translateY(60px);
+}
+
+button:hover .clone > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+button:hover .text > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+button:hover .clone > :nth-child(1) {
+  transition-delay: 0.15s;
+}
+
+button:hover .clone > :nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+button:hover .clone > :nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+button:hover .clone > :nth-child(4) {
+  transition-delay: 0.3s;
+}
+/* icon style and hover */
+button svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-50deg);
+  transition: 0.2s ease-out;
+}
+
+button:hover svg {
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="more">
+        <img src="top-view-monochromatic-leaves-with-copy-space.jpg" height="500px" width="900px" alt="Leaf Image">
+        <h1>We’re simplifying businesses</h1>
+        <p>We are creative, young & result-driven IT Software and Certified Digital Marketing Professionals.<br> 
+        Experts in concept UI/UX, Graphic designing, Web & e-commerce development, improving busi<br> ness  visibility,
+        reach, branding & leads online. “We Focus On Driving Meaningful Results.” <br> Digital  IT Hub has strong foundations
+        by which we wish to gain robust growth. Our diver<br> sified  and dedicated team of professionals has expertise in yielding supreme<br> 
+        corporate IT, Software & Digital marketing services.</p>
+        <!-- From Uiverse.io by satyamchaudharydev --> 
+<button>
+    <div class="text">
+      <span>Back</span>
+      <span>to</span>
+      <span>Home</span>
+    </div>
+    <div class="clone">
+        <a href="portfoliooo.html">
+      <span>Back</span>
+      <span>to</span>
+      <span>Home</span>
+        </a>
+    </div>
+    <svg
+      stroke-width="2"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      fill="none"
+      class="h-6 w-6"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20px"
+    >
+      <path
+        d="M14 5l7 7m0 0l-7 7m7-7H3"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+      ></path>
+    </svg>
+  </button>
+  
+    </div>
+</body>
+</html>
